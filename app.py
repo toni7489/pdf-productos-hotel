@@ -6,10 +6,10 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 productos = [
     "Manzanas", "Peras", "Melón", "Sandia", "Tomate", "Mezclum", "Pan Bimbo", 
     "Pan De Pipas", "Pan De Semillas (1)", "Pan De Semillas (2)", "Pan Blanco", 
-    "Granolas", "Choco Krispis", "Pan Payes De Cereales", "Zumo De Naranja", 
-    "Zumo De Piña Y Uva", "Zumo De Melocotón", "Leche", "Cruasanes", 
+    "Granolas", "Choco Krispis", "Pan Payes cereales", "Zumo de Naranja", 
+    "Zumo de piña y uva", "Zumo de Melocotón", "Leche", "Cruasanes", 
     "Napolitanas", "Donuts Chocolate", "Donuts Blancos", "Tartas", "Nueces", 
-    "Mermelada Fresa", "Mermelada Melocoton", "Mantequilla", "Jamon York", 
+    "Mermelada Fresa", "Mermel. melocotón", "Mantequilla", "Jamon York", 
     "Jamon Serrano", "Salchichon", "Chorizo", "Queso Cheddar", "Queso Havarti", 
     "Queso", "Yogur", "Huevos", "Beicon"
 ]
@@ -36,10 +36,10 @@ style = TableStyle([
     ('TEXTCOLOR', (0, 0), (-1, 2), colors.black),  # Cambia el color del texto a negro
     ('ALIGN', (0, 0), (-1, -1), 'LEFT'),  # Alinear todo a la izquierda
     ('FONTNAME', (0, 0), (-1, 2), 'Helvetica-Bold'),
-    ('FONTSIZE', (0, 0), (-1, 2), 8),  # Tamaño de fuente para el encabezado 1
-    ('FONTSIZE', (2, 0), (-1, 0), 5),  # Tamaño de fuente 5 para header2
-    ('FONTSIZE', (2, 1), (-1, 1), 5),  # Tamaño de fuente 5 para header3
-    ('FONTSIZE', (0, 0), (-1, -1), 6),  # Tamaño de fuente 6 para el resto
+    ('FONTSIZE', (0, 0), (-1, 0), 8),  # Tamaño de fuente para el encabezado 1
+    ('FONTSIZE', (0, 1), (-1, 1), 8),  # Tamaño de fuente para header2
+    ('FONTSIZE', (0, 2), (-1, 2), 8),  # Tamaño de fuente para header3
+    ('FONTSIZE', (0, 3), (-1, -1), 10),  # Tamaño de fuente 10 para el resto
     ('BOTTOMPADDING', (0, 0), (-1, 2), 6),
     ('BACKGROUND', (0, 3), (-1, -1), colors.beige),  # Fondo beige para el resto de la tabla
     ('GRID', (0, 0), (-1, -1), 1, colors.black),
